@@ -21,6 +21,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 div.transbox {
   margin: 30px;
   background-color: black;
