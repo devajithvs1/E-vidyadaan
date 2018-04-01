@@ -9,6 +9,7 @@
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -57,23 +58,16 @@
     </nav>
 
     <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
-        
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner container-fluid">
-            <div class="item active">
-                <div class="parallax" align="center" style="background-image:url(./img/banner.png);"></div>
-                <div class="carousel-caption">
-                    <h1 style="font-size:500%; color:black;">E-VIDYADHAN</h1>
-                </div>
-            </div>
-        </div>
+    <header>
+                <div class="parallax" align="center" style="background-image:url(./img/banner.png);">
+				<div class="centered" ><h1 style="font-size:500%; color:black; font-family:courier;">E-VIDYADHAN</h1></div>
+                
     </header>
 
     <!-- Page Content -->
 	<div class="container">
 		<div class="col-lg-12">
-			<h2 class="page-header" align="center">Presentations</h2>
+			<h2 class="wow bounceInUp" data-wow-offset="0" data-wow-delay="0.8s" align="center">Presentations</h2>
 		</div>
 	</div>
 	
@@ -81,9 +75,9 @@
     <div class="container">
 	<!-- Portfolio Section -->
         <div class="row">
-			<div style="background:gray" id="content">
-				<button class="btn btn-primary btn-round btn-block " data-toggle="collapse" data-target="#class7" style="margin-left:auto;margin-right:auto;display:block;margin-bottom:1%;margin-top:1%"><h3 align="center">CLASS 7</h3></button>
-				<div class="collapse" id="class7">
+			<div class="row" id="content" >
+				<button class="btn btn-primary btn-round btn-block " style="margin-left:auto;margin-right:auto;display:block;margin-bottom:1%;margin-top:1%"><h3 align="center">CLASS 7</h3></button>
+				<div class="wow bounceInDown" id="class7">
 					<div class="col-md-4 col-sm-6">
 						<center>
 						<a href="math.html">
@@ -107,9 +101,9 @@
 					</div>
 				</div>
 			</div>
-			<div style="background:gray" id="content">
-				<button class="btn btn-primary btn-block btn-round" data-toggle="collapse" data-target="#class8" style="margin-left:auto;margin-right:auto;display:block;margin-top:1%;margin-bottom:1%"><h3 align="center" >CLASS 8</h3></button>
-				<div class="collapse" id="class8">
+			<div id="content">
+				<button class="btn btn-primary btn-block btn-round" style="margin-left:auto;margin-right:auto;display:block;margin-top:1%;margin-bottom:1%"><h3 align="center" >CLASS 8</h3></button>
+				<div class="wow bounceInDown" id="class8">
 					<div class="col-md-4 col-sm-6">
 						<center>
 						<a href="math.html">
@@ -133,9 +127,9 @@
 					</div>
 				</div>
 			</div>
-			<div style="background:gray" id="content">
-				<button class="btn btn-primary btn-block btn-round" data-toggle="collapse" data-target="#class9" style="margin-left:auto;margin-right:auto;display:block;margin-top:1%;margin-bottom:1%"><h3 align="center" >CLASS 9</h3></button>
-				<div class="collapse" id="class9">
+			<div id="content">
+				<button class="btn btn-primary btn-block btn-round" style="margin-left:auto;margin-right:auto;display:block;margin-top:1%;margin-bottom:1%"><h3 align="center" >CLASS 9</h3></button>
+				<div class="wow bounceInDown" id="class9">
 					<div class="col-md-4 col-sm-6">
 						<center>
 						<a href="math.html">
@@ -162,6 +156,7 @@
         </div>
     </div>
     <!-- /.container -->
+	<script src="js/wow.min.js"></script>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -175,6 +170,13 @@
         interval: 5000 //changes the speed
     })
     </script>
+	<script>
+		wow = new WOW(
+		 {
+		
+			}	) 
+			.init();
+		</script>
 
 </body>
 

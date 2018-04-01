@@ -1,6 +1,5 @@
 #content {
 	border-radius: 5px;
-    box-shadow: 3px 3px 1px #888888;
 }
 .parallax { 
     /* The image used */
@@ -14,4 +13,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
