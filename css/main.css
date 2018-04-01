@@ -1,0 +1,8 @@
+.show-grid [class*="span"] {
+    background-color: #ddd;
+}
+.container {
+    width:750px;
+    margin-right: auto;
+    margin-left: auto;
+}
