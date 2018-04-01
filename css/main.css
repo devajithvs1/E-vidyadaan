@@ -1,8 +1,4 @@
-.show-grid [class*="span"] {
-    background-color: #ddd;
-}
-.container {
-    width:750px;
-    margin-right: auto;
-    margin-left: auto;
+#content {
+	border-radius: 5px;
+    box-shadow: 3px 3px 1px #888888;
 }
